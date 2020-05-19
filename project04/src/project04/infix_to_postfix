@@ -1,0 +1,16 @@
+infix_to_postfix(exp)
+	while(true)do {
+		symbol getSymbol(exp);
+		case{
+			symbol = operand :
+				print(symbol);
+			symbol = operator :
+				push(stack,symbol);
+			symbol = ")" :
+				print(pop(stack));
+			symbol = null :
+				print(pop(stack));
+			else :
+		}
+	}
+	end infix_to_postfix()
